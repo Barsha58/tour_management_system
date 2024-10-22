@@ -1,0 +1,728 @@
+   
+       /* Custom Navbar Styles */
+       .nav-item {
+        background-color: #6F1D99; /* Default purple color */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+        border-radius: 5px; /* Rounded corners */
+        padding: 0.5rem 1rem; /* Padding for nav items */
+        margin: 0 5px; /* Margin between items */
+        border: 2px solid rgba(111, 29, 153, 0.5); /* Lighter purple margin */
+    }
+    
+    /* Lighter margin effect on hover */
+    .nav-item:hover {
+        border-color: rgba(0, 123, 255, 0.5); /* Lighter blue margin on hover */
+    }
+    
+    /* Dancing Effect */
+    @keyframes dance {
+        0% { transform: translateY(0); }
+        25% { transform: translateY(-5px); }
+        50% { transform: translateY(0); }
+        75% { transform: translateY(-2px); }
+        100% { transform: translateY(0); }
+    }
+    
+    .nav-link {
+        color: white; /* Text color */
+        font-weight: bold; /* Bold text */
+        display: block; /* Full clickable area */
+    }
+    
+    /* Hover Effect */
+    .nav-item:hover {
+        background-color: #007BFF; /* Change to blue on hover */
+        animation: dance 0.5s ease; /* Apply dancing animation on hover */
+    }
+    
+    /* Username specific styling */
+    .user-name {
+        color: #6F1D99; /* Purple color */
+        font-weight: bold;
+        transition: color 0.3s ease; /* Smooth transition for color */
+    }
+    
+    .user-name:hover {
+        color: #007BFF; /* Change to blue on hover */
+    }
+    
+    /* Additional styles for responsiveness */
+    @media (max-width: 768px) {
+        .nav-links {
+            flex-direction: column; /* Stack items vertically on smaller screens */
+            gap: 1rem; /* Add space between items */
+        }
+    }
+    
+           /* Home Section Styles */
+    /* Home Section Styles */
+    .home {
+        position: relative; /* For positioning background */
+        height: 80vh; /* Full height */
+        background-size: cover; /* Cover the entire section */
+        background-position: center; /* Center the background image */
+        display: flex; /* Use flexbox to center content */
+        align-items: center; /* Vertically center */
+        justify-content: center; /* Horizontally center */
+    }
+    
+    /* Content inside Home Section */
+    .content {
+        text-align: center; /* Center align the content */
+        color: white; /* Text color */
+        backdrop-filter: blur(5px); /* Optional: blur effect for better readability */
+        padding: 20px; /* Padding for the content */
+        border-radius: 15px; /* Rounded corners */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    }
+    
+    /* Heading Styles */
+    .home-title {
+        font-size: 2.5rem; /* Font size for heading */
+        font-weight: bold; /* Bold heading */
+        margin-bottom: 20px; /* Space below heading */
+        text-transform: uppercase; /* Uppercase for impact */
+        letter-spacing: 1px; /* Spacing between letters */
+    }
+    
+    /* Search Form Styles */
+    .search-form {
+        display: flex; /* Flexbox for layout */
+        gap: 10px; /* Space between elements */
+        justify-content: center; /* Center align form elements */
+    }
+    
+    /* Select Dropdown Styles */
+    .destination-select {
+        padding: 10px; /* Padding for dropdown */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Rounded corners */
+        background-color: #ffffff; /* Background color */
+        color: #000; /* Darker text color */
+        font-size: 1rem; /* Font size */
+    }
+    
+    /* Month Input Styles */
+    .month-input {
+        padding: 10px; /* Padding for input */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Rounded corners */
+        background-color: #ffffff; /* Background color */
+        color: #333; /* Text color */
+        font-size: 1rem; /* Font size */
+    }
+    
+    /* Search Button Styles */
+    .search-button {
+        padding: 10px 20px; /* Padding for button */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Rounded corners */
+        background-color: #6A1B9A; /* Button background color */
+        color: white; /* Button text color */
+        font-size: 1rem; /* Font size */
+        cursor: pointer; /* Pointer cursor */
+        transition: background-color 0.3s; /* Transition effect */
+    }
+    
+    /* Hover Effect for Search Button */
+    
+    /* Hover Effect for Search Button */
+    .search-button:hover {
+        background-color: #007BFF; /* Blue color on hover */
+    }
+    
+    header {
+        background-color: rgba(229, 243, 253, 0.8); /* Semi-transparent light blue */
+        padding: 20px; /* Padding for the header */
+        position: relative; /* Positioning context */
+        z-index: 1; /* Ensure it's above other content */
+    }
+    
+    /* Optional: Add a box shadow for better visibility */
+    header {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    }
+    /* Packages Section Styles */
+    /* Packages Section Styles */
+    .packages {
+        padding: 50px 20px; /* Padding for the section */
+        background-color: #E5F3FD; /* Light background color for contrast */
+        text-align: center; /* Ensure the whole section content is centered */
+    }
+    
+    /* Stylish Heading for Packages Section */
+    .packages h2 {
+        font-size: 2.5rem; /* Reduced font size for emphasis */
+        margin-bottom: 40px; /* Space below heading */
+        color: #6A1B9A; /* Purple color for heading */
+        font-weight: 900; /* Extra bold for visual impact */
+        position: relative; /* For the underline and animation */
+        display: inline-block; /* Keep the underline aligned */
+        text-transform: uppercase; /* Bold uppercase letters */
+        letter-spacing: 5px; /* Increased letter spacing for elegance */
+        opacity: 0; /* Start invisible for animation */
+        animation: fadeIn 1.2s ease-in-out forwards, bounceIn 1.2s ease-in-out forwards; /* Apply animations */
+    }
+    
+    /* Amazing Underline Effect for the Heading */
+    .packages h2::after {
+        content: '';
+        position: absolute;
+        width: 80%; /* Long underline, matching width of the heading */
+        height: 4px; /* Slightly thinner line thickness */
+        background-color: #6A1B9A; /* Purple underline color */
+        bottom: -10px; /* Place it right below the heading */
+        left: 50%; /* Start in the middle */
+        transform: translateX(-50%) scaleX(0); /* Start from the center and invisible */
+        transform-origin: center;
+        transition: transform 0.5s ease-in-out; /* Smooth transition on hover */
+    }
+    
+    .packages h2:hover::after {
+        transform: translateX(-50%) scaleX(1); /* Grow the underline from the center on hover */
+    }
+    
+    /* Animations for Heading */
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    
+    @keyframes bounceIn {
+        0% { transform: translateY(-50px); opacity: 0; }
+        60% { transform: translateY(10px); opacity: 0.7; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+    * Individual package cards */
+    .package-card {
+        background-color: white; /* Card background color */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        border: 2px solid #E1BEE7; /* Light purple border around the cards */
+        width: 400px; /* Fixed card width */
+        padding: 20px; /* Padding inside cards */ /* Center the text */
+        transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+        display: inline-block; /* Cards will align in a row */
+        margin: 10px; /* Add margin for spacing between cards */
+    }
+    
+    .package-card:hover {
+        transform: translateY(-5px); /* Lift effect on hover */
+        border-color: #6A1B9A; /* Darker purple border on hover */
+    }
+    
+    /* Responsive image inside the package card */
+    .package-card img {
+        width: 100%; /* Image takes the full width of the card */
+        height: 250px; /* Increased image height */
+        object-fit: cover; /* Maintain aspect ratio, cover the card area */
+        border-radius: 10px; /* Rounded corners for image */
+    }
+    
+    .package-card h2 {
+        font-size: 1.8rem; /* Font size for package name */
+        margin: 15px 0; /* Space above and below the title */
+        color: #6A1B9A; /* Package name color */
+        text-align: center; /* Center-align the package name */
+    }
+    
+    .package-card p {
+        margin: 10px 0; /* Space between paragraphs */
+        font-size: 1rem; /* Font size for paragraph text */
+        text-align: left; /* Left-align the paragraph text */
+    }
+    
+    
+    /* Button styles */
+    .btn {
+        display: inline-block; /* Block display for buttons */
+        background-color: #6A1B9A; /* Button background color - Purple */
+        color: white; /* Button text color */
+        padding: 15px 30px; /* Increased padding for buttons */
+        font-size: 1.2rem; /* Increased button text size */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline for links */
+        margin-top: 10px; /* Space above buttons */
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for hover and animation */
+    }
+    
+    .btn:hover {
+        background-color: #2196F3; /* Button color changes to blue on hover */
+        transform: scale(1.05); /* Slightly enlarge the button on hover */
+    }
+    
+    /* Scroll wrapper for horizontal scrolling */
+    .scroll-wrapper {
+        position: relative; /* Required for absolute positioning of buttons */
+        overflow: hidden; /* Ensure the buttons don't overflow */
+        width: 100%; /* Adjust as necessary */
+        display: flex; /* Use flex to align children */
+        justify-content: center; /* Center the cards horizontally */
+        align-items: center; /* Center the cards vertically */
+    }
+    
+    .scroll-button {
+        position: absolute; /* Positioning them absolutely */
+        top: 50%; /* Center vertically */
+        transform: translateY(-50%); /* Align to the center */
+        background-color: #007BFF; /* Example button color */
+        color: white; /* Button text color */
+        border: none; /* Remove default border */
+        padding: 10px; /* Button padding */
+        cursor: pointer; /* Pointer on hover */
+        z-index: 10; /* Ensure buttons are above other elements */
+        border-radius: 5px; /* Add rounded corners to buttons */
+    }
+    
+    /* Position buttons */
+    .scroll-button.left {
+        left: 10px; /* Position left button at the left edge */
+    }
+    
+    .scroll-button.right {
+        right: 10px; /* Position right button at the right edge */
+    }
+    
+    /* Focus effect for scroll buttons (optional for keyboard accessibility) */
+    .scroll-button:focus {
+        outline: none;
+        box-shadow: 0 0 5px 2px rgba(33, 150, 243, 0.5); /* Add glow on focus */
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 992px) {
+        .package-card {
+            width: calc(50% - 20px); /* Two cards per row for medium screens */
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .package-card {
+            width: 100%; /* One card per row for small screens */
+        }
+    }
+    
+    .hidden {
+        display: none; /* This will hide the buttons */
+    }
+    
+    
+    
+    
+    /* Gallery Section Styles */
+    .gallery {
+        padding: 50px 20px; /* Padding for the section */
+        background-color: #E5F3FD; /* Updated background color to match other sections */
+        position: relative; /* Positioning context for pseudo-elements */
+    }
+    
+    /* Add Margin Color to Gallery */
+    .gallery::before {
+        content: '';
+        position: absolute; /* Position it absolutely */
+        top: 0; /* Align to top */
+        left: 0; /* Align to left */
+        right: 0; /* Align to right */
+        bottom: 0; /* Align to bottom */
+        background-color: #6A1B9A; /* Purple margin color */
+        z-index: -1; /* Send behind the section */
+        padding: 20px; /* Space for the margin */
+        border-radius: 10px; /* Optional: Rounded corners for a softer look */
+    }
+    
+    
+    .gallery h2 {
+        text-align: center; /* Center the heading */
+        font-size: 2.5rem; /* Font size for heading */
+        margin-bottom: 30px; /* Space below heading */
+        color: #6A1B9A; /* Heading color */
+        font-weight: bold; /* Make the heading bold */
+    }
+    
+    /* New container for the gallery images */
+    .gallery-container {
+        background-color:  #E5F3FD; /* Background color for the container */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding for inner spacing */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        margin: 0 auto; /* Center the container */
+        border: 2px solid #6A1B9A; /* Border color and width */
+    }
+    
+    /* Gallery images styles */
+    .gallery-images {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        justify-content: space-between; /* Space between images */
+        gap: 20px; /* Space between images */
+        max-width: 1200px; /* Maximum width for the gallery container */
+    }
+    
+    /* Individual gallery items */
+    .gallery-images .gallery-item {
+        flex: 1 1 calc(33.333% - 20px); /* Allow items to grow/shrink, three items per row */
+        display: flex; /* Flexbox for the gallery item */
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center items horizontally */
+        transition: transform 0.3s ease; /* Add transition for hover effect */
+    }
+    
+    .gallery-images .gallery-item:hover {
+        transform: scale(1.05); /* Slightly enlarge the item on hover */
+    }
+    
+    .gallery-images img {
+        width: 100%; /* Make images responsive to the container */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit the height to prevent it from being too tall */
+        object-fit: cover; /* Maintain aspect ratio, cover the area */
+        border-radius: 10px; /* Rounded corners for images */
+    }
+    
+    .gallery-images p {
+        text-align: center; /* Center the destination text */
+        margin-top: 10px; /* Space above destination text */
+        color: #6A1B9A; /* Color for destination text */
+        font-size: 1rem; /* Font size for destination text */
+        line-height: 1.5; /* Increase line height for better readability */
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 992px) {
+        .gallery-images .gallery-item {
+            flex: 1 1 calc(50% - 20px); /* Two items per row for medium screens */
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .gallery-images .gallery-item {
+            flex: 1 1 100%; /* One item per row for small screens */
+        }
+    }
+    .gallery-title {
+        font-size: 2.5rem; /* Adjust size as needed */
+        color: #6A1B9A; /* Matching your theme */
+        text-align: center; /* Center the title */
+        margin-bottom: 20px; /* Space below the title */
+        font-weight: bold; /* Make it bold */
+        text-transform: uppercase; /* Transform text to uppercase for impact */
+        letter-spacing: 1px; /* Increase space between letters */
+        position: relative; /* For additional styling like underlines */
+    }
+    
+    /* Optional: Add a decorative line beneath the title */
+    .gallery-title::after {
+        content: '';
+        display: block;
+        width: 60px; /* Adjust the width */
+        height: 4px; /* Height of the line */
+        background-color: #6A1B9A; /* Color matching the title */
+        margin: 10px auto; /* Center the line */
+    }
+    
+    /* Logo Styling */
+    .logo {
+        font-size: 1.75rem; /* Increase font size of the logo */
+        font-weight: bold; /* Keep it bold */
+        color: #6F1D99; /* Keep the purple color */
+        display: flex; 
+        align-items: center; /* Align the icon and text vertically */
+        margin-left: 10px; /* Add margin for spacing */
+    }
+    
+    /* Adjust the icon size */
+    .logo i {
+        font-size: 1.5rem; /* Increase icon size */
+        margin-right: 10px; /* Space between icon and text */
+    }
+    
+    /* Ensure the logo maintains spacing in the layout */
+    nav .logo {
+        margin-right: auto; /* Push the logo to the left and ensure space */
+    }
+    
+    /* Set the background color for the entire page */
+    body {
+        background-color: #E5F3FD; /* Light blue shade */
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Optionally set the default font */
+    }
+    /* General Section Styling */
+    section {
+        padding: 60px 20px; /* Space around each section */
+        background-color: #E5F3FD; /* Light background for contrast */
+        text-align: center; /* Center all section content */
+        position: relative; /* Positioning context for pseudo-elements */
+    }
+    
+    /* Add Margin Color */
+    section::before {
+        content: '';
+        position: absolute; /* Position it absolutely */
+        top: 0; /* Align to top */
+        left: 0; /* Align to left */
+        right: 0; /* Align to right */
+        bottom: 0; /* Align to bottom */
+        background-color: #6A1B9A; /* Purple margin color */
+        z-index: -1; /* Send behind the section */
+        padding: 20px; /* Space for the margin */
+        border-radius: 10px; /* Optional: Rounded corners for a softer look */
+    }
+    /* About Us Section Styles */
+    .about-us h2, .contact-us h2 {
+        font-size: 3rem; /* Larger font size for emphasis */
+        color: #6A1B9A; /* Change heading color to purple for contrast */
+        font-weight: 900; /* Extra bold for visual impact */
+        margin-bottom: 30px; /* Space below heading */
+        position: relative; /* Positioning context for animation */
+    }
+    
+    /* Attractive Underline Animation */
+    .about-us h2::after, .contact-us h2::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px; /* Height of the underline */
+        background-color: #6A1B9A; /* Color of the underline */
+        position: absolute; /* Positioning context */
+        left: 0;
+        bottom: -10px; /* Position the underline below the heading */
+        transform: scaleX(0); /* Initially scale down */
+        transition: transform 0.5s ease; /* Transition for animation */
+    }
+    
+    .about-us h2:hover::after, .contact-us h2:hover::after {
+        transform: scaleX(1); /* Scale to full width on hover */
+    }
+    
+    /* About Content Styles */
+    .about-content {
+        margin: 0 auto; /* Center the content */
+        max-width: 800px; /* Limit the width */
+    }
+    
+    .about-us h2:nth-of-type(2) {
+        margin-top: 40px; /* Adjust this value to increase or decrease the distance */
+    }
+    
+    
+    /* About Services Styles */
+    .about-services {
+        display: flex; /* Use flexbox for layout */
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        margin-top: 20px; /* Space above the content */
+    }
+    
+    /* Individual Service Item Styles */
+    .service-item {
+        flex: 1 1 30%; /* Flexible basis for items */
+        max-width: 200px; /* Max width for items */
+        margin: 15px; /* Margin between items */
+        padding: 15px; /* Padding inside each item */
+        background-color: #fff; /* White background for items */
+        border: 3px solid #6A1B9A; /* Border color */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: transform 0.3s; /* Smooth scaling effect */
+    }
+    
+    /* Icon Styles for Services */
+    .service-item i {
+        font-size: 2.5rem; /* Icon size */
+        color: #6A1B9A; /* Color matching the heading */
+        margin-bottom: 10px; /* Space below icons */
+    }
+    
+    /* Contact Content Styles */
+    .contact-content {
+        display: flex; /* Use flexbox for alignment */
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        margin-top: 20px; /* Space above the content */
+    }
+    
+    /* Individual Contact Item Styles */
+    .contact-item {
+        flex: 1 1 30%; /* Flexible basis for items */
+        max-width: 250px; /* Max width for items */
+        margin: 15px; /* Margin between items */
+        padding: 15px; /* Padding inside each item */
+        background-color: #fff; /* White background for items */
+        border: 3px solid #6A1B9A; /* Border color */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: transform 0.3s; /* Smooth scaling effect */
+    }
+    
+    /* Icon Styles for Contact Items */
+    .contact-item i {
+        font-size: 2.5rem; /* Icon size */
+        color: #6A1B9A; /* Color matching the heading */
+        margin-bottom: 10px; /* Space below icons */
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .contact-content {
+            flex-direction: column; /* Stack items vertically */
+        }
+    
+        .contact-item {
+            max-width: 100%; /* Full width on smaller screens */
+        }
+    
+        .about-services {
+            flex-direction: column; /* Stack service items vertically */
+        }
+    
+        .service-item {
+            max-width: 100%; /* Full width on smaller screens */
+        }
+    
+        .about-us h2, .contact-us h2 {
+            font-size: 2rem; /* Reduce heading size on smaller screens */
+        }
+    }
+    
+    /* Hover Effect for Service Items */
+    .service-item:hover {
+        transform: translateY(-5px) rotate(3deg); /* Dancing effect on hover */
+    }
+    
+    /* Hover Effect for Contact Items */
+    .contact-item:hover {
+        transform: translateY(-5px); /* Lift effect on hover */
+    }
+    
+    /* Enhanced About Us Heading Styles */
+    .about-heading {
+        font-size: 3rem; /* Larger font size for emphasis */
+        background: linear-gradient(45deg, #6A1B9A, #FF4081); /* Gradient color */
+        -webkit-background-clip: text; /* For Safari */
+        background-clip: text; /* Standard property */
+        -webkit-text-fill-color: transparent; /* Fill text color as transparent for Safari */
+        font-weight: 900; /* Extra bold for visual impact */
+        margin-bottom: 30px; /* Space below heading */
+        position: relative; /* Positioning context for animation */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+        animation: popIn 1s ease-in-out; /* Animation on load */
+    }
+    
+    
+    /* Animation Keyframes */
+    @keyframes popIn {
+        0% {
+            transform: scale(0.5); /* Start small */
+            opacity: 0; /* Invisible */
+        }
+        50% {
+            opacity: 1; /* Fully visible */
+        }
+        100% {
+            transform: scale(1); /* Scale to normal size */
+        }
+    }
+    
+    /* Attractive Underline Animation */
+    .about-heading::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px; /* Height of the underline */
+        background-color: #FF4081; /* Color of the underline */
+        position: absolute; /* Positioning context */
+        left: 0;
+        bottom: -10px; /* Position the underline below the heading */
+        transform: scaleX(0); /* Initially scale down */
+        transition: transform 0.5s ease; /* Transition for animation */
+    }
+    
+    .about-heading:hover::after {
+        transform: scaleX(1); /* Scale to full width on hover */
+    }
+    
+    .footer {
+        background-color: #6A1B9A; /* Purple background color */
+        color: #ffffff; /* White text color */
+        padding: 20px 0; /* Padding for the footer */
+        text-align: center; /* Center the text */
+        transition: background-color 0.3s; /* Smooth transition for background color */
+    }
+    
+    .footer:hover {
+        background-color: #4a0e5b; /* Darker shade on hover */
+    }
+    
+    .footer span {
+        font-weight: bold; /* Make text bold */
+        font-size: 1.2rem; /* Slightly increase font size */
+        animation: fadeIn 0.5s; /* Animation for text appearance */
+    }
+    
+    /* Keyframes for fade-in animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0; /* Start invisible */
+        }
+        to {
+            opacity: 1; /* Fade to visible */
+        }
+    }
+    
+    /* Optional: Add hover effect for better interactivity */
+    .footer a {
+        color: #ffffff; /* White color for links */
+        text-decoration: none; /* Remove underline from links */
+        transition: color 0.3s; /* Smooth color transition */
+    }
+    
+    .footer a:hover {
+        color: #E5F3FD; /* Change link color on hover */
+    }
+    
+    /* Dropdown Link Styles */
+    .x-dropdown-link {
+        display: block; /* Block display for links */
+        padding: 10px 15px; /* Padding for links */
+        color: #ffffff; /* Text color for links (white) */
+        background-color: #007bff; /* Initial blue background */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+    }
+    
+    /* Hover effect for dropdown links */
+    .x-dropdown-link:hover {
+        background-color: #5bc0de; /* Lighter blue background on hover */
+        color: #ffffff; /* Maintain text color (white) on hover */
+    }
+    
+    
+    .gallery-container {
+        overflow-x: auto; /* Enable horizontal scroll */
+        white-space: nowrap; /* Prevent line breaks for rows */
+    }
+    
+    .gallery-images-wrapper {
+        display: flex;
+        flex-direction: column; /* Stack rows vertically */
+        gap: 20px; /* Space between rows */
+    }
+    
+    .gallery-row {
+        display: flex;
+        gap: 15px; /* Space between images */
+    }
+    
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .gallery-item {
+        flex: 0 0 200px; /* Width of each gallery item */
+    }
+    
